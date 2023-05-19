@@ -1,0 +1,4 @@
+name: Parkour
+version: '${project.version}'
+main: kr.vanilage.parkour.Parkour
+api-version: 1.19
