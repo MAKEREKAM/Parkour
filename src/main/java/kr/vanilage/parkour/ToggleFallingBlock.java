@@ -25,9 +25,9 @@ public class ToggleFallingBlock implements Listener {
             e.getPlayer().playSound(e.getPlayer(), Sound.UI_BUTTON_CLICK, 100, 0.7F);
             ArrayList<Location> blockList = new ArrayList<>();
 
-            for (int i = -200; i <= 200; i++) {
-                for (int j = -64; j <= 0; j++) {
-                    for (int k = -200; k <= 200; k++) {
+            for (int i = -400; i <= 400; i++) {
+                for (int j = -64; j <= 64; j++) {
+                    for (int k = -400; k <= 400; k++) {
                         if (e.getPlayer().getWorld().getBlockAt(i, j, k).getType().equals(Material.PURPUR_BLOCK)) {
                             blockList.add(new Location(e.getPlayer().getWorld(), i, j, k).add(0.5, 0, 0.5));
                         }
